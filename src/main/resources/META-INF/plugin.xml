@@ -13,7 +13,11 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.mariacbarboza.prototipoplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.mariacbarboza.prototipoplugin.startup.MyProjectActivity" />
+        <!-- A sua interface do Coding Dojo -->
+        <toolWindow id="Dojo Config"
+                    anchor="right"
+                    secondary="true"
+                    factoryClass="br.codingdojo.ui.DojoConfigToolwindowFactory"
+                    icon="AllIcons.Nodes.Class"/>
     </extensions>
 </idea-plugin>
